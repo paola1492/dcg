@@ -1,0 +1,94 @@
+.marco {
+  font-family: "Slabo 27px", serif;
+  text-align: center;
+  background: linear-gradient(
+    232deg,
+    rgba(169, 199, 234, 0.503) 0%,
+    rgba(85, 141, 238, 0.15) 14%,
+    rgb(249, 249, 250) 74%
+  );
+  max-width: 600px;
+  margin: 30px auto;
+  border-radius: 40px;
+}
+
+h1 {
+  color: rgb(20, 78, 133);
+  font-weight: bold;
+  font-size: large;
+}
+
+.paola {
+  color: rgb(92, 92, 92);
+  font-family: "Slabo 27px", serif;
+  text-align: left;
+  background-color: white;
+  max-width: 600px;
+  margin: 10px auto;
+  border-radius: 40px;
+  font-size: smaller;
+  text-align: center;
+}
+
+.daniel {
+  font-family: "Slabo 27px", serif;
+  color: rgb(20, 78, 133);
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(55, 122, 167);
+  }
+}
+
+.aparece {
+  position: relative;
+  font-size: xx-large;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgb(37, 134, 237),
+    rgb(158, 177, 224),
+    rgb(49, 105, 177)
+  );
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(9, 80, 131, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
